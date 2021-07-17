@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>이정현의 포트폴리오 입니다.</title>
+	
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+
+		}
+
+		header{
+			width: 100%;
+			height: 40px;
+			background-color: #35a2fa;
+	
+		}
+
+		header #header_content{
+			width: 980px;
+			height: 40px;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 20px;
+			background-color: #35a2fa;
+			padding-top: 5px;
+			font-weight: bold;
+			color: #ffffff;
+
+
+		}
+
+		#main_box{
+			width: 980px;
+			margin: 0 auto;
+		}
+
+		
+		#main_box main{
+			width:980px;
+			height: 600px;
+			float: left;
+			background-color: #ffffff;
+		}
+
+
+		#main_boxx{
+			width: 980px;
+			margin: 0 auto;
+		}
+
+		
+		#main_boxx main{
+			width:980px;
+			height: 660px;
+			float: left;
+			background-color: #ffffff;
+		}
+
+
+		#mainx{
+			font-size: 54px;
+			padding-top: 25%;
+			font-weight: bold;
+			
+		}
+
+		#main_boxxx{
+			width: 980px;
+			margin: 0 auto;
+		}
+
+		
+		#main_boxxx main{
+			width:980px;
+			height: 1100px;
+			float: left;
+			background-color: #ffffff;
+		}
+
+
+
+
+		#main1{
+			font-size: 54px;
+			padding-top: 25%;
+			font-weight: bold;
+			font-family: "HY헤드라인M";
+
+		}
+		
+		footer{
+			width: 100%;
+			height: 50px;
+			clear:both;
+			background-color: #35a2fa;
+		}
+
+		footer #footer_content{
+			width:980px;
+			height: 50px;
+			margin:0 auto;
+			background-color: #35a2fa;
+			text-align: center;
+			font-family: "HY헤드라인M";
+			font-size: 13px;
+		}
+
+
+		@keyframes cursor{
+		  50%{ border-color: transparent; }
+		}
+
+		.text{
+		/*font-family: "HY헤드라인M";*/
+		  display: table-cell;
+		  vertical-align: middle;
+		  font-size: 55px;
+		  height: 32px;
+		  border-right: .05em solid black;
+		  animation: cursor 0.5s ease infinite;
+		}
+
+		/*#main2_img{
+			padding: 15px 0 0 24px;
+			float: left;
+		}
+		*/
+
+		 .main2 ul{
+		 	font-size: 18px;
+		 	line-height: 150%;
+		 	font-family: "HY헤드라인M";
+		 	padding-top: 30px;
+
+
+		}
+
+		.main2 li{
+			display: inline;
+		}
+
+		.main2{
+			float: left;
+			margin:5px;
+
+		}
+
+		.main2 img{
+			display: block;
+		}
+
+		.clear{
+			clear:left;
+		}
+
+		#bold{
+			font-weight: bolder;
+		}
+
+		.main3{
+			border:solid 3px #000000;
+			float: left;
+			margin: 5px;
+		}
+
+		.main3 img{
+			display: block;
+		}
+
+		#hw_box{
+			width: 220px;
+			height: 120px;
+			border:solid 2px #bbbbbb;
+			border-radius: 15px;padding-top: 
+			margin:10px 0 0px 10px;
+			padding: 10px 0 0 15px;
+			background-color: #e1c3f6;
+		
+		}
+
+		#btn_o, #btn_x{
+			display: inline-block;
+			vertical-align: top;
+
+		}
+
+		#btn_o button{
+			margin-left: 5px;
+			padding:12px;
+			border-radius: 5px;
+		}
+
+			#btn_x button{
+			margin-left: 5px;
+			padding:12px;
+			border-radius: 5px;
+		}
+
+		#main4{
+			font-size: 50px;
+			font-weight: bolder;
+		}
+
+		 .main44 ul{
+		 	font-size: 18px;
+		 	line-height: 150%;
+		 	font-family: "HY헤드라인M";
+		 	padding-top: 30px;
+		 	line-height: 200%;
+
+
+		}
+
+		.main44 li{
+			display: inline;
+		}
+
+		.main44{
+			float: left;
+			margin:5px;
+
+		}
+
+		.main44 img{
+			display: block;
+		}	
+
+		#colred{
+			color: #ff0000;
+		}
+
+		#colblu{
+			color:#0055ff;
+		}
+
+		a:link{
+			color:#ffffff;
+			text-decoration: none;
+		}
+
+		a:visited{
+			color: #ffffff;
+		}
+
+		a:hover{
+			color: #fbdbf2;
+			font-weight: bold;
+			text-decoration:none;
+		}
+
+		a:active{
+			color: #00ffff;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<header>
+	<div id = "header_content">
+		<a href=https://lee0877.github.io/NICETOMEETU/page1-2.html>📚Home📚</a>
+	</div>
+</header>
+
+<section id = "main_boxx">
+
+	<main><div id = "mainx">
+		<h1 class = "text"></h1>
+		<script>
+			const content = "FRONT-END개발자 면접 준비"
+			//const content = "front-end개발자를 꿈꾸고 있습니다."
+			const text = document.querySelector(".text")
+
+			let index = 0;
+			 
+			function typing(){
+			  text.textContent += content[index++]
+			  if(index > content.length){
+			    text.textContent = ""
+			    index = 0;
+			  }
+			}
+			setInterval(typing, 200)
+		</script>
+
+
+		<h6>_________________________________________________________</h6>
+
+	</div></main>
+
+</section>
+
+<section id = "main_box">
+
+	<main>
+
+		<div class = "main2">
+		<br>
+		<br>
+		<h1>FRONT-END 면접 질문</h1>
+	<ul>
+		<li>면접엔 무슨 질문이 나올까요?</li>
+		<div class ="clear"></div>
+		<li>제가 몇몇에 포스팅을 찾아본 결과</li>
+		<div class ="clear"></div>
+		<li>FRONT-END개발자 면접에서는 기본적인 언어들의  </li>
+		<div class ="clear"></div>
+		문법과 기업에 서비스 및 기술에 대한 질문이 많았습니다.</li>
+		
+	</ul>
+</div>
+
+	<div class = "main2">
+		<img src = "img/find.png" width="350" height="300">
+	</div>
+
+	
+
+<div class ="clear"></div>
+
+	<div class ="main2">
+		<br>
+		<ul>
+			<li>SO?</li>
+			<div class ="clear"></div>
+			<li>1. 지원하고자 하는 기업의 정보를 알아둬야 합니다.</li>
+			<div class ="clear"></div>
+			<li>2. 언어 및 기술에 관련된 기본 정의 및 설명을 할 수 있어야 합니다.</li>
+			<div class ="clear"></div>
+			<li>3. 포트폴리오에 사용할 프로젝트는 미리 준비 합니다.</li>
+			<div class = "clear"></div>
+
+		</ul>
+		<br>
+		<br>
+		<h1>_________________________________________________________________________________________</h1>
+	</div>
+
+<div class ="clear"></div>
+	
+
+</section>
+
+<section id = "main_boxxx">
+	
+	<main>
+		
+		<h2>✏️지원하고자 하는 기업의 정보를 알아둬야 합니다.</h2>
+		<br>
+		<div class ="main44">
+		<br>
+		<br>
+		<ul>
+			<li>지원하고자 하는 기업의 서비스에 대해 알아둬야 합니다. </li>
+			<div class ="clear"></div>
+			<li>해당 서비스를 직접 이용해보고 장점과 단점을 파악합니다.</li>
+			<div class ="clear"></div>
+			<li>그 외에 기업에 방향과 가치관을 파악하는 것이 좋습니다.</li>
+		</ul>
+	</div>
+
+	<div class = "main2">
+		<img src = "img/pic1.png" width="350" height="250">
+	</div>
+		
+
+	<div class ="clear"></div>
+	<br>
+	<br>
+	
+
+	<h2>✏️언어 및 기술에 관련된 기본 정의 및 설명을 할 수 있어야 합니다.</h2>
+		<br>
+
+		<div class = "main2">
+		<img src = "img/picc.png" width="350" height="250">
+	</div>
+
+		<div class ="main44">
+		
+		
+		<ul>
+			<li>WEB, HTML, CSS, JS 등의 기본 설명이 가능해야 합니다.</li>
+			<div class ="clear"></div>
+
+			<li>ex)<span id ="colred"> Q: CSS중에 inline요소와 block요소의 차이점을 기술하라</span></li>
+
+
+			<div class ="clear"></div>
+
+			<li><span id = "colblu">A: inline요소는 가로 나열로 요소의 크기만큼만 공간을</span></li>
+
+			<div class = "clear"></div>
+
+			<li><span id = "colblu">점유하므로 크기를 지정해도 반영이 되지 않는다.</span></li>
+
+			<div class = "clear"></div>
+
+			<li><span id = "colblu">block요소는 세로 나열이고 무조건 한줄을 점유하고</span></li>
+
+			<div class = "clear"></div>
+
+			 <li><span id = "colblu">있으며 다음 태그에는 자동으로 줄바꿈이 적용된다.</span></li>
+
+		</ul>
+	</div>
+
+<div class = "clear"></div>
+<br>
+<br>
+<br>
+
+	<h2>✏️포트폴리오에 사용할 프로젝트는 미리 준비 합니다.</h2>
+		<br>
+		<div class ="main44">
+		<br>
+		<br>
+		<ul>
+			<li>면접 기회가 예고되어 있지 않은 경우를 대비하여  </li>
+			<div class ="clear"></div>
+			<li>미리 면접에서 선보일 포트폴리오를 준비해둡니다.</li>
+			<div class ="clear"></div>
+			<li>평소에 틈틈이 작업을 해두면 개발 실력 향상과 </li>
+			<div class = "clear"></div>
+			<li>완성도 높은 포트폴리오를 만들 수 있습니다.</li>
+		</ul>
+	</div>
+
+	<div class = "main2">
+		<img src = "img/coding.png" width="350" height="250">
+	</div>
+
+	
+	</main>
+
+</section>
+
+<section id = "main_box">
+	
+	<main>
+		<h1>_________________________________________________________________________________________</h1>
+		<br>
+		<div id = "main4">🦾WE CAN DO ANYTHING</div>
+		<br>
+		<div class ="main44">
+		<ul>
+			<li>우리 모두 희망하고자 하는 일들이 다 잘 됐으면 좋겠습니다. </li>
+			<div class ="clear"></div>
+			<li>방문해 주셔서 감사합니다.😊</li>
+			
+			
+			
+
+		</ul>
+	</div>
+
+	<div class = "main2">
+		<img src = "img/me.png" width="400" height="400">
+	</div>
+	</main>
+
+</section>
+
+
+<footer>
+	<div id = "footer_content">
+		😀방문해 주셔서 감사합니다😀
+		<br>
+		🍀HAVE A NICE DAY🍀
+	</div>
+</footer>
+
+</body>
+</html>
